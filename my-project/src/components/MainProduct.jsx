@@ -1,9 +1,11 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+
 const MainProduct = () => {
   const { _id } = useParams();
   const [product, setProduct] = useState(null);
+  
 
   useEffect(() => {
     fetch(`https://fakestoreapi.com/products/${_id}`)
@@ -22,11 +24,13 @@ const MainProduct = () => {
       });
   }, [_id]);
 
+
 if (!product) {
     return <div>Loading or product not found...</div>;
 }
 
 const { title, price, description, category } = product;
+
 
   return(
     <>

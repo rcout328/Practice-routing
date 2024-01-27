@@ -1,7 +1,7 @@
 import { createBrowserRouter,  RouterProvider } from "react-router-dom";
-import Home from "./Home";
-import MainProduct from "./MainProduct";
 
+import MainProduct from "./MainProduct";
+import Jata from "./Jata";
 
 import Cart from "./Cart";
 import Practice from "./Practice";
@@ -10,7 +10,7 @@ import Practice from "./Practice";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Jata />,
   },
   {
     path: "/cart",

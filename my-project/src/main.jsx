@@ -2,10 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './index.css'
-import Appp from './components/APProuter.jsx'
+import AppRouter from './components/APProuter'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Appp />
+    <AppRouter />
   </React.StrictMode>,
 )

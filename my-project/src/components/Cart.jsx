@@ -1,5 +1,8 @@
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
+useParams
 const Cart = () => {
+  const {_id} = useParams()
+  alert(_id)
   return (
     <div>
     Cart hai ye

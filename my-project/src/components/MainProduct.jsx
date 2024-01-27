@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const MainProduct = () => {
   const { _id } = useParams();
+  alert(_id)
   const [product, setProduct] = useState(null);
   
 

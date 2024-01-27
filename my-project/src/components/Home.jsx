@@ -59,6 +59,7 @@ const Home = () => {
             <span className="text-xl font-bold">${item.price}</span>
             <button className="px-3 py-1 text-sm font-medium text-white bg-blue-700 rounded hover:bg-blue-800 focus:ring focus:outline-none">
               <Link to={`/product/${item.id}`}>Buy Product</Link>
+              <Link to={`/cart/${item.id}`}>LL</Link>
             </button>
           </div>
         </div>
